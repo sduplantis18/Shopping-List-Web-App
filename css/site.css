@@ -1,0 +1,80 @@
+div {
+    border: red .5px solid;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/*Navbar Styling*/
+.nav {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: #87f08e;
+    align-items: center;
+    color: black;
+}
+
+
+/*Navbar Title*/
+.title {
+    flex: 1;
+    width: 100%;
+    font-size: 2em;
+    margin: 0 40%;
+}
+
+body {
+    background-color: #454848;
+    color: #87f08e;
+}
+
+
+/**Grocery List layout and styles**/
+.container {
+    max-width: 60%;
+    margin: 10% 30%;
+}
+
+input[type=text] {
+    -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+
+input[type=text]:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.grocery-list {
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start
+}
+
+.grocery-list li {
+    margin: 25px 0;
+    font-size: 1.2em
+}
+
+/*Footer*/
+
+footer {
+    background-color: #87f08e;
+    padding: 2.5em;
+}
+
