@@ -4,30 +4,28 @@
 	<meta charset="UTF-8">
 	<title>Shopping List</title>
     <link rel="stylesheet" href="css/site.css">
-</head>
-    
-    <div class="nav">
+    <script src="js/app.js"></script>
+</head>    
+<body>
+<div class="nav">
         <div class="title">Shopping List</div>
     </div>
     
-<body>
-    
-    <div class="container">
-    <form action="#" method="post">
-        <div>
-            <label for="name">Enter New Grocery Item!</label>
-            <input type="text" name="name" id="name"/>
-        </div>
-    </form>
-        
-        <ul class="grocery-list">
-            <li>Pickles</li>
-            <li>Mayo</li>
-            <li>Milk</li>
-            <li>Jelly</li>
-            <li>Pancakes</li>
-        </ul>
+<div class="container">
+    <div>
+        <label>Enter New Grocery Item!</label>
+        <input id="items" type="text">
+        <button id="add">Add Item!
+        </button>
     </div>
+            <ul class="grocery-list">
+                <li class="item">Pickles</li>
+                <li class="item">Mayo</li>
+                <li class="item">Milk</li>
+                <li class="item">Jelly</li>
+                <li class="item">Pancakes</li>
+            </ul>
+</div>
     <footer>
         Footer
     </footer>
