@@ -2,8 +2,7 @@
 $(function() {
 $('#add').click(function () {
   var input = $('#enter-items');
-  $('.grocery-list')
-    .append('<li class="item">' + input.val() + '</li>');
+  $('.grocery-list').append('<li class="item">' + input.val() + '</li>');
   input.val('');
 });
 });
