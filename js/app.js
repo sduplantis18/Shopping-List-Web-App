@@ -1,9 +1,9 @@
-$(document).ready(function(){
-    $('#add').click(function(){
-        $('.grocery-list').append('<li class="item">' + $('input#items').val() + '</li>');
-        $('input#items').val('');
 
-    });	
-    //remove list item from .grocery-list 
+$(function() {
+$('#add').click(function () {
+  var input = $('#enter-items');
+  $('.grocery-list')
+    .append('<li class="item">' + input.val() + '</li>');
+  input.val('');
 });
-
+});
