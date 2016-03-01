@@ -68,8 +68,33 @@ input[type=text]:focus {
 
 .item {
     margin: 25px 0;
-    font-size: 1.2em
+    font-size: 1.2em;
 }
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.checkbox {
+  background-color: rgb(135, 240, 142);
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  margin-right: 2em;        
+}
+
+.done {
+  border-width: 4.88px;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-radius: 50%;
+  background-color: rgb(255, 0, 0);
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  margin-right: 2em;
+}
+
 
 /*Footer*/
 
@@ -77,4 +102,3 @@ footer {
     background-color: #87f08e;
     padding: 2.5em;
 }
-
