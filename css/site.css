@@ -106,7 +106,6 @@ input[type=text]:focus {
 .done {
   border-width: 4.88px;
   border-color: rgb(0, 0, 0);
-  border-style: solid;
   border-radius: 50%;
   background-color: rgb(255, 0, 0);
   width: 25px;
