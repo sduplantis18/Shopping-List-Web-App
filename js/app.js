@@ -4,7 +4,7 @@ $('#add').click(function () {
 console.log('Add button cicked');
   var input = $('#enter-items');
   $('.grocery-list')
-    .append('<li class="item">' + '<div class="checkbox"></div>' + input.val() + '</li>');
+    .append('<li class="item animated slideInLeft">' + '<div class="checkbox"></div>' + '<span>' + input.val() + '</span>' + '</li>');
   input.val('');
 });  
 // toggles red circle when any checkboxes are clicked on

@@ -1,6 +1,4 @@
-div {
-    border: red .5px solid;
-}
+
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -8,16 +6,18 @@ div {
 
 html {
   box-sizing: border-box;
+    height: 100%;
 }
 
 /*Navbar Styling*/
-.nav {
+nav {
     display: flex;
     height: 100px;
     width: 100%;
     background-color: #87f08e;
     align-items: center;
     color: black;
+    
 }
 
 
@@ -26,20 +26,33 @@ html {
     flex: 1;
     width: 100%;
     font-size: 2em;
-    margin: 0 40%;
+    text-align: center;
 }
 
 body {
     background-color: #454848;
     color: #87f08e;
+    margin: 0;
+    height: 100%;
 }
 
 
 /**Grocery List layout and styles**/
 .container {
-    max-width: 60%;
-    margin: 10% 30%;
+    max-width: 80%;
+    margin: 10% 20%;
+    background-color: dimgrey;
+    border: solid;
+    display: flex;
+    flex-direction: column;
 }
+
+#add {
+    background-color: #87f08e;
+    text-decoration: none;
+}
+
+
 
 input[type=text] {
     -webkit-transition: all 0.30s ease-in-out;
@@ -66,9 +79,15 @@ input[type=text]:focus {
     align-items: flex-start
 }
 
+/*Gorcery Line Item Styles*/
 .item {
     margin: 25px 0;
     font-size: 1.2em;
+    width: 90%;
+}
+
+.item span {
+    margin-left: 25%;
 }
 
 .strikethrough {
@@ -80,7 +99,8 @@ input[type=text]:focus {
   width: 25px;
   height: 25px;
   display: inline-flex;
-  margin-right: 2em;        
+  margin-right: 2em; 
+  vertical-align: bottom;
 }
 
 .done {
@@ -96,9 +116,16 @@ input[type=text]:focus {
 }
 
 
+
 /*Footer*/
 
 footer {
     background-color: #87f08e;
-    padding: 2.5em;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    color: black;
+    position: fixed;
+    clear: both;
 }
